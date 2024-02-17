@@ -1,5 +1,6 @@
 # Li-ion-batteries-got-a-new-charging-module
 A battery charging module to charge 1s/2s cells, based on buck phenomenon.
+see the full article here: https://www.hackster.io/sainisagar7294/li-ion-batteries-got-a-new-charging-module-d04a46
 
 I am in the search of making a battery powered lab bench power supply, so that with a small form factor it becomes easy to carry while travelling on a project trip. This allows me to check and confirm the electronics components. But I need at least 2 lithium ion batteries in series so that I can efficiently use the buck and boost circuits in order to get a fixed high or low voltage. So, I faced many problems in design, the first one is to charge the batteries with a 12v adapter. Since it's 8.4v in series with 4.2v each li–ion battery. For this I need a charge circuit which can charge 8.4volts and 4.2 separately. Usually a battery changing circuit measures battery health, state of charge and then charge with constant current or constant voltage modes. Balance charging is also a crucial factor and plays an important role here if more than one battery is in series, but I don’t want to utilize that function here, because I am using identical cells from the same batch and manufacturer. So the internal chemical composition and charge properties are also identical in this case.
 
@@ -49,11 +50,12 @@ PCB design:
 
 ![Untitled](https://github.com/halfstudents/Li-ion-batteries-got-a-new-charging-module/assets/86649536/0f1686f9-0d12-4e97-8f4d-4b1039427b93)
 
-I implement the design by keeping all the noise and stabilization problems in mind. Tracks are made with enough calculations to carry max current hence delivering maximum power and reduce overall heat effects. To keep all the effects of switching section minimal on the input and output the PCB is divided according to the input to output flow. I kept the form factor as small as possible, which makes this design more practical and easier to use as a standalone battery charging device. For input and output connections Solder pads are given on the both side.
+I implement the design by keeping all the noise and stabilization problems in mind. Tracks are made with enough calculations to carry max current hence delivering maximum power and reduce overall heat effects. To keep all the effects of switching section minimal on the input and output the PCB is divided according to the input to output flow. I kept the form factor as small as possible, which makes this design more practical and easier to use as a standalone battery charging device. For input and output connections Solder pads are given on the both side. 
+https://jlcpcb.com/SSR
 
 ![ice_screenshot_20240208-182935](https://github.com/halfstudents/Li-ion-batteries-got-a-new-charging-module/assets/86649536/58c175db-a031-40e3-8b00-73b082275d77)
 
-To order same PCB, download all the required files from here, I always prefer to use JLCPCB and their assembly services. JLCPCB is the China based PCB manufacture provide services in PCBA, SMT, Stencil, 3D printing and Metal parts. Sign-up now and order your first PCB, get free coupons to order PCBs from the link given here. Just upload the files and select the required board parameters, BOM and CPL files can be used to order fully assembled boards.
+To order same PCB, download all the required files from here, I always prefer to use JLCPCB and their assembly services. JLCPCB is the China based PCB manufacture provide services in PCBA, SMT, Stencil, 3D printing and Metal parts. Sign-up now and order your first PCB, get free coupons to order PCBs from the link given here. Just upload the files and select the required board parameters, BOM and CPL files can be used to order fully assembled boards. https://jlcpcb.com/SSR
 
 Assembly Instructions:
 
@@ -69,7 +71,7 @@ I have done the testing with 1s and 2s battery packs, as stated earlier this for
 
 ![mini_IMG_3462](https://github.com/halfstudents/Li-ion-batteries-got-a-new-charging-module/assets/86649536/497c5705-0cfd-4288-8515-78a3ffd4c314)
 
-For a 1s battery pre-charged at 4.1v the max charging current is measured around 300mA and for 2s battery 500mA. The charging current is small because the batteries are pre-charged and in constant current mode the charging current keep reducing as charging proceeds.
+For a 1s battery pre-charged at 4.1v the max charging current is measured around 300mA and for 2s battery 500mA. The charging current is small because the batteries are pre-charged and in constant current mode the charging current keep reducing as charging proceeds. https://jlcpcb.com/SSR
 
 ![mini_IMG_3464](https://github.com/halfstudents/Li-ion-batteries-got-a-new-charging-module/assets/86649536/4bcf4425-6712-4aef-b476-6b09054a447d)
 
